@@ -1,6 +1,7 @@
 package com.example.ngken.androidalertdialogexample;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -54,12 +55,12 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog.Builder alert = new AlertDialog.Builder(MainActivity.this);
 
 
-                alert.setTitle("Alert Title");
-                alert.setMessage("Let's Go Somewhere");
+                alert.setTitle("Navigate");
+                alert.setMessage("Go to custom alert activity");
                 alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(getApplicationContext(), "OK Let's go!", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(getApplicationContext(), CustomAlertActivity.class));
                     }
                 });
                 alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
