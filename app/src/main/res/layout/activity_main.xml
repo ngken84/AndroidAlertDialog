@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:gravity="center"
@@ -15,6 +14,15 @@
         android:textColor="@android:color/white"
         android:text="Show Alert"
         android:id="@+id/alertButton"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="Show Uncancel Dialog"
+        android:id="@+id/uncancelAlertBtn"
         android:gravity="center" />
 
 </LinearLayout>
