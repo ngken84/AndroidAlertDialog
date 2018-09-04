@@ -13,15 +13,17 @@
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:text="Show Alert"
+        android:layout_margin="10px"
         android:id="@+id/alertButton"
         android:gravity="center" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10px"
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
-        android:text="Show Uncancel Dialog"
+        android:text="Go to Custom Dialog Activity"
         android:id="@+id/uncancelAlertBtn"
         android:gravity="center" />
 
